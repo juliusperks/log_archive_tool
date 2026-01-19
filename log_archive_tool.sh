@@ -19,3 +19,4 @@ fi
 log_dir=$1
 timestamp=$(date +%Y%m%d_%H%M%S)
 tar -czf "logs_archive_${timestamp}.tar.gz" "$log_dir"
+echo "$(date '+%Y-%m-%d %H:%M:%S') - Archived $log_dir to logs_archive_${timestamp}.tar.gz" >> archive.log
